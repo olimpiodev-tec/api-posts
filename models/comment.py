@@ -6,7 +6,7 @@ class Comment:
 
     def to_json(self):
         return {
-            'comment_id': self.comment_id,
-            'post_id': self.post_id,
-            'description': self.description
+            "comment_id": self.comment_id,
+            "post_id": self.post_id,
+            "description": self.description
         }

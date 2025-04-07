@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
-def get_db_connection():
+def get_connection():
     conn = psycopg2.connect(
         dbname=os.getenv('DB_DATABASE'),
         user=os.getenv('DB_USER'),
